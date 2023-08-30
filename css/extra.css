@@ -1,0 +1,274 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+#nav{
+    height: 100px;
+    position:fixed;
+    width: 100%;
+    top:0;
+}
+
+.aaa{
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+.MenuSecenekleri a:link, .MenuSecenekleri a:visited{
+  color: #212529;
+    height: 40px;
+    text-decoration: none;
+}
+.MenuSecenekleri a:hover, .MenuSecenekleri a:active{
+    border-bottom: 2px solid #6024f1;
+    color:#6024f1;
+}
+.btn-dark-ben{
+    background-color:unset;
+    border: 0px;
+}
+
+.blockquote-footer{
+    font-size: 25px;
+}
+section{
+    height: auto;
+}
+.BanaUlas{
+    background-color: #6b5ad3;
+    border: none;
+    color: white;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.14) , 0px 1px 10px 0px rgba(0,0,0,0.12) , 0px 2px 4px -1px rgba(0,0,0,0.2) ;
+}
+.BanaUlas:hover{
+    box-shadow:0px 8px 17px 2px rgba(0,0,0,0.14) , 0px 3px 14px 2px rgba(0,0,0,0.12) , 0px 5px 5px -3px rgba(0,0,0,0.2)  ;
+}
+.Adreslerim a{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    color: #6b5ad3;
+}
+.Adreslerim a i:hover{
+    color: #212529;
+}
+#AnasayfaHakkimda{
+    display: flex;
+    align-items: center;
+}
+#Profil{
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+}
+#Profil2{
+    width: 100%;
+    height: auto;
+    border-radius: 20%;
+}
+#Section1, #Section2, #Section3, #Section4, #Footer {
+    margin-top: 80px;
+}
+#Scroll{
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+   margin-top:20%;
+   margin-left:17%;
+}
+#Scroll i{
+    font-size: 30px;
+color: #6b5ad3;
+}
+#Scroll span{
+    margin-left: 5px;
+    font-size: 30px;
+    color: #6b5ad3;
+}
+
+
+/*TOGGLE MENU-BAŞLANGIÇ-*/
+#menu__toggle {
+    opacity: 0;
+  }
+  #menu__toggle:checked + .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked + .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0deg);
+  }
+  #menu__toggle:checked + .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    left: 0 !important;
+  }
+  .menu__btn {
+    position: relative;
+    top:16px;
+    margin-right: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #6b5ad3;
+
+    transition-duration: .25s;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+  .menu__box {
+    display: block;
+    position: fixed;
+    top: 103px;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 20px 0;
+    list-style: none;
+    background-color: white;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+    transition-duration: .25s;
+    z-index: -1;
+
+  }
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: .25s;
+  }
+  .menu__item:hover {
+    background-color: #6b5ad3;
+    color: white;
+  }
+  #ToggleIcon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #home-tab, #profile-tab, #contact-tab, #disabled-tab{
+    color:  #6b5ad3;
+    font-weight: 600;
+  }
+  /*TOGGLE MENU -BİTİŞ-*/
+
+  /* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+background-color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border:none;
+  border-radius: 10px;
+  border-bottom: 1px solid #dee2e6;
+  outline: none;
+  transition: 0.4s;
+  margin-bottom: 30px;
+  
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active2, .accordion:hover {
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1) , 0px 4px 6px -2px rgba(0,0,0,0.05) ;
+  color: #6b5ad3;
+
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+
+#IletisimSon{
+  display: flex;
+  justify-content:center;
+  background-color: #6b5ad3;
+  align-items: center;
+  color: white;
+  height: 300px;
+  font-size: 20px;
+
+
+}
+#IletisimSon img{
+  width: 100%;
+  height: auto;
+}
+#IletisimResim{
+  position: relative;
+  bottom: 30%;
+  z-index: 98;
+}
+#IletisimSon:hover {
+  
+  box-shadow: 0px 24px 38px 3px rgba(0,0,0,0.14) , 0px 9px 46px 8px rgba(0,0,0,0.12) , 0px 11px 15px -7px rgba(0,0,0,0.2)  ;
+}
+
+@media (max-width: 576px) 
+{ 
+  #IletisimResim{
+    bottom: -20%;
+  }
+}
+
+#FooterElemanlar{
+  box-shadow: 0px 24px 38px 3px rgba(0,0,0,0.14) , 0px 9px 46px 8px rgba(0,0,0,0.12) , 0px 11px 15px -7px rgba(0,0,0,0.2)  ;
+  border-width: 1px 1px 0px 1px;
+  border-top-left-radius: 10px;
+  border-top-right-radius:10px;
+  height: 80px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+
+
+
+/*açskdslakfKASŞDKFA.SLFİ,ASÇDFLÖASDFL,*/
+
+.progress-container {
+  background-color: white;
+  height: 10px;
+  width: 91%;
+}
+
+.progress-bar {
+  background-color:#6b5ad3;
+  border-radius: 5px;
+  height: 10px;
+  width: 0%;
+}
+
+.content {
+  padding: 2em;
+}
+

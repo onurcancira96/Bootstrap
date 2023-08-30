@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Derslerim</title>
+  <link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css">
+  <link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css.map">
+  <link type="text/css" rel="stylesheet" href="/css/extra.css" >
+  
+</head>
+<body>
+  <nav id="nav" class="navbar navbar-expand-lg bg-white shadow-sm">
+
+    <div class="container justify-content-between">
+      <div id="ToggleIcon">
+        <!--TOGGGLE MENU-->
+        <div class="hamburger-menu d-lg-none">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+
+          <ul class="menu__box d-lg-none">
+            <li><a class="menu__item" href="#top">HOME</a></li>
+            <li><a class="menu__item" href="#Scroll2">CATE</a></li>
+            <li><a class="menu__item" href="#Scroll3">CAREER</a></li>
+            <li><a class="menu__item" href="#Footer">CONTACT</a></li>
+          </ul>
+        </div>
+        <!--TOGGGLE MENU-->
+        <div>
+          <a class="navbar-brand aaa col-1" href="#"> [Cate Blancett]</a>
+
+          <div class="progress-container col-1">
+            <div class="progress-bar" id="progressBar"></div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="navbar-brand d-none d-lg-inline-flex col-6 justify-content-around ">
+        <div class="nav-item navbar-brand MenuSecenekleri"><a href="#top">HOME</a></div>
+        <div class="nav-item navbar-brand MenuSecenekleri"><a href="#Scroll2">CATE</a></div>
+        <div class="nav-item navbar-brand MenuSecenekleri"><a href="#Scroll3">CAREER</a></div>
+        <div class="nav-item navbar-brand MenuSecenekleri"><a href="#Footer">CONTACT</a></div>
+      </div>
+
+    </div>
+  </nav>
+
+
+  <main class="container">
+    <section id="Section1"
+      class=" container bg-white col-12 d-flex align-items-center justify-content-center justify-content-lg-between flex-wrap fade-in-out">
+
+      <div class=" col-6 col-lg-5 order-lg-3 mb-5  ">
+        <img id="Profil" src="/resimler/profil.png">
+      </div>
+
+      <div id="AnasayfaHakkimda" class=" col-12 col-lg-5 d-block align-content-center justify-content-center order-lg-2">
+        <h1 class="display-3">Cate Blanchett</h1>
+        <p>
+        <footer class="blockquote-footer">Lady of Lórien</footer>
+        </p>
+        <p class="lead mb-5">Cate Blanchett is a renowned Australian actress and film producer. Throughout her career, she has taken on significant roles in both artistic contexts and has proven her talents by winning numerous awards.</p>
+        <a href="#Footer"><button id="BanaUlas1" type="button"
+            class="BanaUlas nav-item navbar-brand ms-1 p-3 fs-5 btn  btn-dark">Contact to Her<i
+              class=" ms-2 bi bi-arrow-down-right-square"></i></button></a>
+        <p id="Scroll" class="col-12 container d-none d-lg-flex"><i class="bi bi-mouse"></i class="lead"> Wiew More <span> ↓ </span></p>
+      </div>
+
+    </section>
+    <p id="Scroll2" class="col-12 container d-lg-flex fade-in-out"></p>
+    <section id="Section2" class="fade-in-out">
+      <div class="col-12">
+        <h1 class="display-3 d-flex justify-content-center mb-5">CATE</h1>
+      </div>
+      <div class="col-12 d-block d-lg-flex" style="height: auto;">
+        <div class="col-6 col-lg-3 mb-5 container ">
+          <img id="Profil2" src="/resimler/profil2.png" alt="">
+          <div class="d-flex justify-content-center align-items-center"></div>
+        </div>
+        <div class="col-12 col-lg-8 container">
+          <!--TAB-->
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Biography</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Facts and Family</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
+                type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Trivia</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane"
+                type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false">Quotes</button>
+            </li>
+          </ul>
+          <div class="tab-content lead" id="myTabContent">
+            <div class="tab-pane fade show active " id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+              tabindex="0">
+              <p class="mt-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                been the industry's
+                standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
+                to make
+                a type specimen book. It has survived not only five centuries, but also the leap into electronic
+                typesetting,
+                remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                containing
+                Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
+                versions
+                of Lorem Ipsum.</p>
+            </div>
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+              <p class="mt-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                been the industry's
+                standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
+                to make
+                a type specimen book. It has survived not only five centuries, but also the leap into electronic
+                typesetting,
+                remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                containing
+                Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
+                versions
+                of Lorem Ipsum.</p>
+
+            </div>
+            <div class="tab-pane fade " id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+
+              <p class="mt-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                been the industry's
+                standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
+                to make
+                a type specimen book. It has survived not only five centuries, but also the leap into electronic
+                typesetting,
+                remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                containing
+                Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
+                versions
+                of Lorem Ipsum.</p>
+
+            </div>
+            <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab"
+              tabindex="0">
+              <p class="mt-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                been the industry's
+                standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
+                to make
+                a type specimen book. It has survived not only five centuries, but also the leap into electronic
+                typesetting,
+                remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                containing
+                Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
+                versions
+                of Lorem Ipsum.</p>
+            </div>
+          </div>
+          <!--TAB-->
+        </div>
+      </div>
+    </section>
+<P id="Scroll3"></P>
+    <section id="Section3" style="height: auto;">
+      <div class="col-12">
+        <h1 class="display-3 d-flex justify-content-center mb-5">CAREER</h1>
+      </div>
+
+      <button class="accordion lead">Movies</button>
+      <div class="panel">
+        <p>Lorem ipsum...</p>
+      </div>
+
+      <button class="accordion lead">Theatres</button>
+      <div class="panel">
+        <p>Lorem ipsum...</p>
+      </div>
+
+      <button class="accordion lead">Tv Series</button>
+      <div class="panel">
+        <p>Lorem ipsum...</p>
+      </div>
+
+      <button class="accordion lead">Others</button>
+      <div class="panel">
+        <p>Lorem ipsum...</p>
+      </div>
+
+    </section>
+    <section id="Section4">
+      <div class="col-12">
+        <h1 class="display-3 d-flex justify-content-center mb-5">CONTACT</h1>
+      </div>
+      <div id="IletisimSon" class="col-12 container rounded ">
+
+        <div class="container col-5 rounded flex-shrink-1">
+          <p class=" lead">E-mail: CateBlancett@gmail.com</p>
+          <p class=" lead">You can contact me using my email address.</p>
+        </div>
+        <div id="IletisimResim" class="col-5 ">
+          <img src="/resimler/mail.png" alt="">
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer id="Footer" class="container-fluid">
+    <div id="FooterElemanlar" class="container col-12">
+
+      <div class="navbar-brand d-none d-lg-flex col-5 justify-content-around lead fw-normal">
+        <div class="nav-item navbar-brand MenuSecenekleri"><a href="#top">HOME</a></div>
+        <div class="nav-item navbar-brand MenuSecenekleri"><a href="#Scroll2">CATE</a></div>
+        <div class="nav-item navbar-brand MenuSecenekleri"><a href="#Scroll3">CAREER</a></div>
+        <div class="nav-item navbar-brand MenuSecenekleri"><a href="#Footer">CONTACT</a></div>
+      </div>
+
+      <div class="col-12 col-lg-3 lead float-end">
+        <p>© 2010-2018 All right reserved.</p>
+      </div>
+
+    </div>
+
+  </footer>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js.map"></script>
+  <script src="js/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+
+</html>
