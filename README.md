@@ -20,7 +20,7 @@ https://onurcancira96.github.io/Bootstrap/
 4. E-posta iletişim bilgileri olan iletişim bölümü.
 5. Kolay gezinme için bağlantılarla bir gezinme çubuğu.
 
-Kullanım
+## Kullanım
 Bu projeyi kendi projelerinizde başlangıç noktası olarak veya benzer web siteleri oluşturmak için özgürce kullanabilirsiniz. İşte projeyi yerel makinenizde kullanmaya başlamak için adımlar:
 
 1. Web tarayıcısında index.html dosyasını açarak web sitesini görüntüleyebilirsiniz. Basitçe dosyayı çift tıklamak veya tarayıcınıza sürüklemek yeterlidir.
