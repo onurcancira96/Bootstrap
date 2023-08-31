@@ -6,7 +6,7 @@ Bu proje, HTML ve Bootstrap kullanılarak oluşturulmuş basit bir web sitesi i�
 
 ## Proje URL
 
-https://onurcancira96.github.io/Bootstrap/
+https://onurcancira96.github.io/Bootstrap-Website-for-Cate-Blancett/
 
 ## Ekran Görüntüsü
 
